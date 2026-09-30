@@ -1,0 +1,14 @@
+{
+  "name": "webhook-tester",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "cloudflared bin install",
+    "start": "node index.js",
+    "local": "node index.js --no-tunnel"
+  },
+  "dependencies": {
+    "cloudflared": "^0.7.0"
+  }
+}
